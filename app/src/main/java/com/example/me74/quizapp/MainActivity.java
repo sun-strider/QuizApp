@@ -1,6 +1,5 @@
 package com.example.me74.quizapp;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -145,14 +144,14 @@ public class MainActivity extends AppCompatActivity {
         /** Toast message to display that the quiz has finished, and to show the score.
          *  It will also notify the user, that the free text will be evaluated separately
          */
-        Toast.makeText(this, getString(R.string.toast_message_congrats) + "\n" +
-                        getString(R.string.toast_message_score)
+        Toast.makeText(this, getString(R.string.toast_message_congrats, userName) + "\n" +
+                        getString(R.string.toast_message_score, String.valueOf(score))
                 , Toast.LENGTH_LONG).show();
 
 
        Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"quizguru@gmail.com"});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{String.valueOf(R.string.email_adress)});
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject, userName));
         intent.putExtra(Intent.EXTRA_TEXT, freeTextAnswer);
         if (intent.resolveActivity(getPackageManager()) != null) {
