@@ -140,15 +140,17 @@ public class MainActivity extends AppCompatActivity {
                 , Toast.LENGTH_LONG).show();
 
 
-       Intent intent = new Intent(Intent.ACTION_SENDTO);
+        /** Send email with the freetext answer
+         *  will use the email address and sunject defined in strings.xml
+         */
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{String.valueOf(R.string.email_adress)});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{getString(R.string.email_address)});
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject, userName));
         intent.putExtra(Intent.EXTRA_TEXT, freeTextAnswer);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
-
 
 
     }

@@ -54,7 +54,7 @@
     <string name="toast_message_score">Your score is  <xliff:g example="10" id="score">%s</xliff:g></string>
 
 
-    <string name="email_adress">quizguru@gmail.com</string>
+    <string name="email_address">quizguru@gmail.com</string>
 
     <!-- Subject line for the order summary email. It will be in the format of "Freetext answer of Amy" where Amy is the user's name. [CHAR LIMIT=NONE]-->
     <string name="email_subject">Freetext Answer for  <xliff:g example="Amy" id="userName">%s</xliff:g></string>
