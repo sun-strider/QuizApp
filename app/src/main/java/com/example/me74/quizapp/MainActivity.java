@@ -14,15 +14,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    // This array should contain all the answers. will use it for another iteration of the app
-    boolean[] answerArray =
-            {false, true, false, true, true, false,
-                    true, false, true, true, false, true,
-                    true, false,
-                    true, false, true, false,
-                    false, false, false, true
-            };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
