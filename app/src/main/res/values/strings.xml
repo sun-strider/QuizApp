@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Quiz App</string>
     <string name="titel">Chemistry Quiz: Acids &amp; Bases</string>
 
@@ -47,6 +47,6 @@
     <string name="show_score">0</string>
     <string name="submit_answers">Submit answers</string>
 
-    <string name="email_subject">Answer to free text</string>
-
+    <!-- Subject line for the order summary email. It will be in the format of "Freetext answer of Amy" where Amy is the user's name. [CHAR LIMIT=NONE]-->
+    <string name="email_subject">Freetext Answer for  <xliff:g id="userName" example="Amy">%s</xliff:g></string>
 </resources>

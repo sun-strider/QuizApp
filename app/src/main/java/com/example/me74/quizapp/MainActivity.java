@@ -49,53 +49,53 @@ public class MainActivity extends AppCompatActivity {
         // Check answers to question 1. Multiple can be checked. If wrong answers are checked, the points will decrease
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_1);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerWrongAnswer;
+            score += pointsPerWrongAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_2);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_3);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerWrongAnswer;
+            score += pointsPerWrongAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_4);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_5);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_6);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerWrongAnswer;
+            score += pointsPerWrongAnswer;
         }
 
         // Check answers to question 2. Multiple can be checked. If wrong answers are checked, the points will decrease
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_7);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_8);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerWrongAnswer;
+            score += pointsPerWrongAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_9);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_10);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_11);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerWrongAnswer;
+            score += pointsPerWrongAnswer;
         }
         answersToQuestions = (CheckBox) findViewById(R.id.anwser_12);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
 
         /** Check answers to question 3. Only one can be checked, so only the right one will increase score
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
          */
         answersToQuestions = (RadioButton) findViewById(R.id.anwser_13);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
 
         /** Check answers to question 4. Only one can be checked, so only the right one will increase score
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
          */
         answersToQuestions = (RadioButton) findViewById(R.id.anwser_15);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
 
         /** Check answers to question 6. Only one can be checked, so only the right one will increase score
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
          */
         answersToQuestions = (RadioButton) findViewById(R.id.anwser_22);
         if (answersToQuestions.isChecked()) {
-            score = score + pointsPerRightAnswer;
+            score += pointsPerRightAnswer;
         }
 
         /** Check answer to the free text question. As it cannot be scored based on an easy algorithm,
@@ -127,6 +127,11 @@ public class MainActivity extends AppCompatActivity {
          */
         EditText freeTextQuestionInput = (EditText) findViewById(R.id.freetext_answer_input_1);
         String freeTextAnswer = freeTextQuestionInput.getText().toString();
+
+        // 42 is the answer to everything, so this will give an additional point :)
+        if (freeTextAnswer.equals("42")) {
+            score += pointsPerRightAnswer;
+        }
 
 
         // Sets score to 0 if it is lower
