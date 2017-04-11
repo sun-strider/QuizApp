@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="titel">Chemistry Quiz: Acids &amp; Bases</string>
+
+    <string name="name_hint">Please enter your name</string>
+
+    <string name="question_1">What are properties of acids?</string>
+    <string name="answer_1">Slippery</string>
+    <string name="answer_2">Sour</string>
+    <string name="answer_3">pH &#62; 7</string>
+    <string name="answer_4">pH &#60; 7</string>
+    <string name="answer_5">Proton donor</string>
+    <string name="answer_6">Proton acceptor</string>
+
+    <string name="question_2">What are properties of bases?</string>
+    <string name="answer_7">Slippery</string>
+    <string name="answer_8">Sour</string>
+    <string name="answer_9">Bitter</string>
+    <string name="answer_10">pH &#62; 7</string>
+    <string name="answer_11">Proton donor</string>
+    <string name="answer_12">Proton acceptor</string>
+
+    <string name="question_3">According to definitions of acids and bases by Lewis:</string>
+    <string name="answer_13">Acids are electron pair acceptors and bases are donors</string>
+    <string name="answer_14">Acids are electron pair donors and bases are acceptors</string>
+
+
+    <string name="question_4">In the formula for pH, the concentration of hydronium (H3O+) ions can
+        be approximatly swapped for the concentration of the dissolved substance. This is true for:</string>
+    <string name="answer_15">Strong acids</string>
+    <string name="answer_16">Weak acids</string>
+    <string name="answer_17">Strong bases</string>
+    <string name="answer_18">Weak bases</string>
+
+    <string name="question_5">Please explain why the above can be done? Hint: How will the reaction go when dissolved in water?</string>
+    <string name="free_text_answer_hint_1">Enter your answer here. It will be sent by mail and separatly scored</string>
+
+    <string name="question_6">A relative simple calculation as above can also be done for the respectice opposite (e.g. either stron/weak base/acid)
+         How should the pH then be calculated?</string>
+    <string name="answer_19">14 - [substance]</string>
+    <string name="answer_20">14 - log [substance]</string>
+    <string name="answer_21">0 + log [substance]</string>
+    <string name="answer_22">14 + log [substance]</string>
+
+
+    <string name="score_title">Score</string>
+    <string name="show_score">0</string>
+    <string name="submit_answers">Submit answers</string>
+
+    <string name="email_subject">Answer to free text</string>
+
+</resources>
