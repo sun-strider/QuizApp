@@ -145,8 +145,8 @@ public class MainActivity extends AppCompatActivity {
         /** Toast message to display that the quiz has finished, and to show the score.
          *  It will also notify the user, that the free text will be evaluated separately
          */
-        Toast.makeText(this, "Congratulations " + userName + ", you have finished the test." + "\n" +
-                        "Your score is " + score
+        Toast.makeText(this, getString(R.string.toast_message_congrats) + "\n" +
+                        getString(R.string.toast_message_score)
                 , Toast.LENGTH_LONG).show();
 
 

@@ -47,6 +47,12 @@
     <string name="show_score">0</string>
     <string name="submit_answers">Submit answers</string>
 
+    <!-- Toast message congratulations part. It will be in the format of "Congratulations Amy you have finished the test." where Amy is the user's name. [CHAR LIMIT=NONE]-->
+    <string name="toast_message_congrats">Congratulations  <xliff:g id="userName" example="Amy">%s</xliff:g> you have finished the test</string>
+
+    <!-- Toast message score display part. It will be in the format of "Your score is 10." where 10 is the score. [CHAR LIMIT=NONE]-->
+    <string name="toast_message_score">Your score is  <xliff:g id="score" example="10">%s</xliff:g> you have finished the test</string>
+
     <!-- Subject line for the order summary email. It will be in the format of "Freetext answer of Amy" where Amy is the user's name. [CHAR LIMIT=NONE]-->
     <string name="email_subject">Freetext Answer for  <xliff:g id="userName" example="Amy">%s</xliff:g></string>
 </resources>
