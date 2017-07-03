@@ -89,27 +89,33 @@ public class MainActivity extends AppCompatActivity {
         }
 
         /** Check answers to question 3. Only one can be checked, so only the right one will increase score
-         *  If the radio button wit the right answer is changed, then the ID has to be changed to the correct button
+         *  If the radio button with the right answer is changed, then the ID has to be changed to the correct button
          */
         answersToQuestions = (RadioButton) findViewById(R.id.anwser_13);
         if (answersToQuestions.isChecked()) {
-            score += pointsPerRightAnswer;
+            score += 2 * pointsPerRightAnswer;
+        } else {
+            score += pointsPerWrongAnswer;
         }
 
         /** Check answers to question 4. Only one can be checked, so only the right one will increase score
-         *  If the radio button wit the right answer is changed, then the ID has to be changed to the correct button
+         *  If the radio button with the right answer is changed, then the ID has to be changed to the correct button
          */
         answersToQuestions = (RadioButton) findViewById(R.id.anwser_15);
         if (answersToQuestions.isChecked()) {
-            score += pointsPerRightAnswer;
+            score += 2 * pointsPerRightAnswer;
+        } else {
+            score += pointsPerWrongAnswer;
         }
 
         /** Check answers to question 6. Only one can be checked, so only the right one will increase score
-         *  If the radio button wit the right answer is changed, then the ID has to be changed to the correct button
+         *  If the radio button with the right answer is changed, then the ID has to be changed to the correct button
          */
         answersToQuestions = (RadioButton) findViewById(R.id.anwser_22);
         if (answersToQuestions.isChecked()) {
-            score += pointsPerRightAnswer;
+            score += 2 * pointsPerRightAnswer;
+        } else {
+            score += pointsPerWrongAnswer;
         }
 
         /** Check answer to the free text question. As it cannot be scored based on an easy algorithm,
